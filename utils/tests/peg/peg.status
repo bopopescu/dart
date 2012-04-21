@@ -1,0 +1,18 @@
+# Copyright (c) 2011, the Dart project authors.  Please see the AUTHORS file
+# for details. All rights reserved. Use of this source code is governed by a
+# BSD-style license that can be found in the LICENSE file.
+
+[ $runtime == opera ]
+peg_tests: Skip
+
+[ $compiler == dart2js && ($runtime == ff || $runtime == ie || $runtime == chrome || $runtime == safari) ]
+peg_tests: Skip # TODO(ahe): Triage
+
+[ $arch == x64 ]
+*: Skip
+
+[ $arch == simarm ]
+*: Skip
+
+[ $arch == arm ]
+*: Skip
