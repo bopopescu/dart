@@ -414,6 +414,11 @@
       'defines': [
         'DART_SHARED_LIB',
       ],
+      'link_settings': {
+        'libraries': [
+          '-lsqlite3',
+        ],
+      },
       'conditions': [
         ['OS=="win"', {
           'msvs_settings': {
